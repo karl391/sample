@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vibe Coding</h1>
+        </div>
+    </header>
+
+    <section id="intro" class="container">
+        <h2>소개</h2>
+        <p>Vibe Coding은 현대적이고 직관적인 코딩 경험을 제공하는 혁신적인 플랫폼입니다. 개발자들이 더 효율적으로 코드를 작성하고, 협업하며, 프로젝트를 관리할 수 있도록 설계되었습니다.</p>
+    </section>
+
+    <section id="features" class="container">
+        <h2>주요 기능</h2>
+        <ul>
+            <li><strong>실시간 협업</strong>: 팀원들과 실시간으로 코드를 공유하고 수정할 수 있는 기능을 제공합니다.</li>
+            <li><strong>스마트 코드 완성</strong>: AI 기반의 코드 완성 기능으로 개발 속도를 높여줍니다.</li>
+            <li><strong>다양한 언어 지원</strong>: Python, JavaScript, Java, C++ 등 다양한 프로그래밍 언어를 지원합니다.</li>
+            <li><strong>통합 디버깅 도구</strong>: 코드 실행 및 디버깅을 위한 통합 도구를 제공하여 개발 과정을 간소화합니다.</li>
+            <li><strong>프로젝트 관리</strong>: Git 연동 및 프로젝트 관리 도구를 통해 효율적인 프로젝트 진행이 가능합니다.</li>
+        </ul>
+    </section>
+
+    <section id="use-cases" class="container">
+        <h2>사용 사례</h2>
+        <ul>
+            <li><strong>개인 프로젝트</strong>: 개인 개발자들이 아이디어를 빠르게 구현하고 테스트할 수 있습니다.</li>
+            <li><strong>팀 프로젝트</strong>: 팀원들과의 원활한 협업을 통해 대규모 프로젝트를 효율적으로 관리할 수 있습니다.</li>
+            <li><strong>교육 및 학습</strong>: 교육 기관에서 학생들에게 코딩 실습 환경을 제공하여 학습 효과를 극대화합니다.</li>
+        </ul>
+    </section>
+
+    <section id="get-started" class="container">
+        <h2>시작하기</h2>
+        <p>Vibe Coding을 시작하려면 <a href="https://vibecoding.com" class="btn">Vibe Coding 공식 웹사이트</a>를 방문하세요. 간단한 회원가입 후 바로 사용할 수 있습니다.</p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>지원 및 문의</h2>
+        <p>사용 중 궁금한 점이나 지원이 필요하면 <a href="mailto:support@vibecoding.com" class="btn">support@vibecoding.com</a>으로 연락주세요. 저희 팀은 항상 여러분의 질문에 답변할 준비가 되어 있습니다.</p>
+    </section>
+
+    <script>
+        // 부드러운 스크롤 애니메이션
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
